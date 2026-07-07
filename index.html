@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oroveda Reserve — Botanical Oral Ritual Oil</title>
+<meta name="description" content="A premium botanical oral oil inspired by traditional Ayurvedic mouth care — created for a cleaner, calmer, more intentional daily ritual. Not a drug. Not a substitute for dental care." />
+<meta property="og:title" content="Oroveda Reserve — Botanical Oral Ritual Oil" />
+<meta property="og:description" content="Before the appointment, there is the ritual." />
+<meta property="og:type" content="website" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Product","name":"Oroveda Reserve — Botanical Oral Ritual Oil","description":"Premium botanical oral ritual oil inspired by traditional Ayurvedic mouth care. 60 ml.","offers":[{"@type":"Offer","price":"149","priceCurrency":"USD"},{"@type":"Offer","price":"249","priceCurrency":"USD"},{"@type":"Offer","price":"299","priceCurrency":"USD"}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* ═══════════════ OROVEDA RESERVE — STYLE SYSTEM ═══════════════ */
+:root{
+  --charcoal:#0B0908; --oxblood:#2A0F0F; --gold:#B8945C; --gold-bright:#D4B47C;
+  --ivory:#F5EFE5; --amber:#C9823A; --clay:#9A6A4F; --stone:#D8CEC0;
+  --ease:cubic-bezier(.22,1,.36,1); --ease-soft:cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--charcoal);color:var(--ivory);font-family:"Inter",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+img{max-width:100%}
+.serif{font-family:"Cormorant Garamond",serif;font-weight:500;letter-spacing:-.01em}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ── Announcement + header ── */
+.announce{background:var(--oxblood);text-align:center;padding:9px 16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-bright)}
+header{position:sticky;top:0;z-index:50;background:rgba(11,9,8,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(184,148,92,.15)}
+.hrow{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Cormorant Garamond",serif;font-size:21px;letter-spacing:.34em;color:var(--ivory)}
+.logo span{color:var(--gold)}
+.hnav{display:flex;align-items:center;gap:26px}
+.hnav a,.hnav button{background:none;border:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,239,229,.72);transition:color .2s}
+.hnav a:hover,.hnav button:hover{color:var(--gold-bright)}
+@media(max-width:640px){.hnav a.hidesm{display:none}}
+
+/* ── Buttons ── */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 34px;border-radius:2px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;border:none;transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.btn-gold{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-bright) 55%,var(--gold) 100%);color:var(--charcoal)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px -10px rgba(184,148,92,.55)}
+.btn-ghost{background:transparent;color:var(--ivory);border:1px solid rgba(184,148,92,.45)}
+.btn-ghost:hover{border-color:var(--gold-bright);color:var(--gold-bright)}
+/* liquid shimmer */
+.btn-gold::after{content:"";position:absolute;top:0;left:-80%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);transition:left .6s var(--ease)}
+.btn-gold:hover::after{left:130%}
+.btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+/* ═══════════════ SECTION 1 — HERO ═══════════════ */
+.hero{position:relative;min-height:100vh;display:grid;align-items:center;background:
+  radial-gradient(1100px 700px at 72% 30%,rgba(201,130,58,.16),transparent 60%),
+  radial-gradient(900px 600px at 20% 85%,rgba(42,15,15,.9),transparent 65%),
+  linear-gradient(165deg,#0B0908 0%,#1A0D0B 45%,#2A0F0F 100%)}
+.hero-grid{display:grid;gap:56px;padding:72px 0 110px}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr;align-items:center;padding:40px 0 120px}}
+.hero h1{font-size:clamp(46px,6.4vw,84px);line-height:1.02;color:var(--ivory)}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(22px);filter:blur(4px);animation:wordin .9s var(--ease) forwards}
+@keyframes wordin{to{opacity:1;transform:none;filter:none}}
+.hero .sub{margin-top:26px;max-width:480px;font-size:16px;line-height:1.75;color:rgba(245,239,229,.78);opacity:0;animation:fadeup 1s var(--ease) 1.15s forwards}
+.hero .ctas{margin-top:36px;display:flex;flex-wrap:wrap;gap:16px;opacity:0;animation:fadeup 1s var(--ease) 1.4s forwards}
+.trust-micro{margin-top:22px;font-size:12px;letter-spacing:.04em;color:rgba(245,239,229,.55);opacity:0;animation:fadeup 1s var(--ease) 1.6s forwards}
+@keyframes fadeup{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+
+/* particles — suspended botanicals */
+.particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.p{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(212,180,124,.85),rgba(201,130,58,0));animation:drift linear infinite}
+@keyframes drift{0%{transform:translateY(20vh) translateX(0);opacity:0}12%{opacity:.7}88%{opacity:.5}100%{transform:translateY(-108vh) translateX(28px);opacity:0}}
+
+/* ── The bottle ── */
+.stage{position:relative;display:flex;justify-content:center;perspective:1200px}
+.bottle-wrap{position:relative;opacity:0;animation:rise 1.6s var(--ease) .2s forwards;will-change:transform}
+@keyframes rise{from{opacity:0;transform:translateY(70px) scale(.94)}to{opacity:1;transform:none}}
+.bottle{position:relative;width:190px;height:430px;transform-style:preserve-3d;animation:slow-rotate 14s ease-in-out infinite;transition:transform .5s var(--ease)}
+@keyframes slow-rotate{0%,100%{transform:rotateY(-9deg) rotateX(1.5deg)}50%{transform:rotateY(9deg) rotateX(-1.5deg)}}
+.bottle-wrap:hover .bottle{animation-play-state:paused;transform:rotateY(6deg) rotateX(-4deg) scale(1.03)}
+.glass{position:absolute;inset:52px 18px 0;border-radius:14px 14px 10px 10px;background:linear-gradient(160deg,rgba(64,38,24,.96) 0%,rgba(24,12,8,.98) 55%,rgba(10,6,4,1) 100%);box-shadow:0 60px 90px -30px rgba(0,0,0,.85),inset 0 1px 0 rgba(255,255,255,.14),inset -14px 0 30px rgba(0,0,0,.6),inset 14px 0 30px rgba(201,130,58,.12);overflow:hidden}
+.liquid{position:absolute;left:0;right:0;bottom:0;height:74%;background:linear-gradient(180deg,rgba(201,130,58,.9) 0%,rgba(140,74,28,.95) 45%,rgba(74,36,14,1) 100%);filter:saturate(1.1)}
+.liquid::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(255,214,150,.9),transparent);filter:blur(.5px)}
+.refraction{position:absolute;top:0;bottom:0;left:16%;width:14%;background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,.05) 60%,transparent);filter:blur(1px);border-radius:50%}
+.refraction2{position:absolute;top:8%;bottom:8%;right:12%;width:6%;background:linear-gradient(180deg,rgba(255,214,150,.28),transparent 70%);filter:blur(2px);border-radius:50%}
+.glow-sweep{position:absolute;top:0;bottom:0;left:-60%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,220,160,.16),transparent);transform:skewX(-14deg);animation:sweep 7s var(--ease) infinite}
+@keyframes sweep{0%,55%{left:-60%}80%,100%{left:130%}}
+.blabel{position:absolute;left:14%;right:14%;top:30%;bottom:26%;background:linear-gradient(180deg,#141010,#0c0908);border:1px solid rgba(184,148,92,.5);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;text-align:center;padding:12px 8px}
+.blabel .l1{font-family:"Cormorant Garamond",serif;font-size:20px;letter-spacing:.3em;color:var(--gold-bright)}
+.blabel .l2{font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.42em;color:var(--gold)}
+.blabel .rule{width:36px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.blabel .l3{font-size:6.5px;letter-spacing:.24em;text-transform:uppercase;color:rgba(245,239,229,.65)}
+.blabel .l4{font-size:6px;letter-spacing:.2em;color:rgba(245,239,229,.4)}
+.cap{position:absolute;top:0;left:50%;transform:translateX(-50%);width:64px;height:62px;border-radius:5px 5px 3px 3px;background:linear-gradient(180deg,#2b2118 0%,#141009 70%);box-shadow:inset 0 2px 3px rgba(212,180,124,.28),inset 0 -6px 10px rgba(0,0,0,.7),0 8px 18px rgba(0,0,0,.5)}
+.cap::after{content:"";position:absolute;left:8px;right:8px;top:14px;height:1px;background:rgba(184,148,92,.4);box-shadow:0 6px 0 rgba(184,148,92,.25),0 12px 0 rgba(184,148,92,.18)}
+.neck{position:absolute;top:50px;left:50%;transform:translateX(-50%);width:44px;height:16px;background:linear-gradient(180deg,#1a0f09,#241209);border-radius:2px}
+.shadow{position:absolute;bottom:-34px;left:50%;transform:translateX(-50%);width:200px;height:34px;background:radial-gradient(ellipse,rgba(0,0,0,.75),transparent 70%)}
+
+/* hero purchase card */
+.buycard{margin-top:44px;max-width:430px;background:rgba(20,14,11,.72);border:1px solid rgba(184,148,92,.28);border-radius:4px;padding:26px;backdrop-filter:blur(8px);opacity:0;animation:fadeup 1s var(--ease) 1.8s forwards}
+.buycard .prow{display:flex;justify-content:space-between;align-items:baseline}
+.buycard .pname{font-family:"Cormorant Garamond",serif;font-size:21px}
+.buycard .pprice{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold-bright)}
+.skus{display:flex;gap:8px;margin-top:16px}
+.sku{flex:1;background:transparent;border:1px solid rgba(184,148,92,.3);border-radius:2px;padding:10px 6px;color:rgba(245,239,229,.7);font-size:11px;letter-spacing:.08em;text-transform:uppercase;transition:all .2s}
+.sku.on{border-color:var(--gold-bright);color:var(--gold-bright);background:rgba(184,148,92,.08)}
+.subtoggle{display:flex;align-items:center;gap:12px;margin-top:18px;font-size:13px;color:rgba(245,239,229,.75)}
+.switch{position:relative;width:42px;height:22px;background:rgba(184,148,92,.25);border-radius:22px;border:none;transition:background .25s;flex-shrink:0}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--ivory);transition:transform .25s var(--ease)}
+.switch.on{background:var(--gold)}
+.switch.on::after{transform:translateX(20px)}
+.buycard .btn{width:100%;margin-top:20px}
+.buycard .fine{margin-top:12px;text-align:center;font-size:11px;color:rgba(245,239,229,.45)}
+
+/* ═══════════════ SECTION 2 — BETWEEN APPOINTMENTS ═══════════════ */
+.s2{position:relative;background:linear-gradient(180deg,#0B0908 0%,#160C0A 60%,#0B0908 100%);padding:130px 0;overflow:hidden}
+.s2 .grid{display:grid;gap:64px}
+@media(min-width:960px){.s2 .grid{grid-template-columns:1fr 1fr;align-items:center}}
+.s2 h2{font-size:clamp(34px,4.6vw,54px);line-height:1.08;margin-top:20px}
+.s2 .sub{margin-top:22px;max-width:480px;font-size:15px;line-height:1.8;color:rgba(245,239,229,.72)}
+.calcards{position:relative;display:flex;flex-direction:column;gap:14px;margin-top:36px}
+.cal{background:rgba(245,239,229,.04);border:1px solid rgba(184,148,92,.22);border-radius:4px;padding:16px 20px;font-size:13px;letter-spacing:.03em;color:rgba(245,239,229,.78);display:flex;align-items:center;gap:14px;backdrop-filter:blur(4px)}
+.cal .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);flex-shrink:0;box-shadow:0 0 12px rgba(201,130,58,.8)}
+.probcards{display:grid;gap:16px}
+.prob{background:linear-gradient(160deg,rgba(42,15,15,.5),rgba(20,12,9,.7));border:1px solid rgba(184,148,92,.25);border-radius:4px;padding:28px}
+.prob h3{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold-bright)}
+.prob p{margin-top:10px;font-size:14px;line-height:1.7;color:rgba(245,239,229,.72)}
+.trail{position:absolute;left:50%;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,rgba(184,148,92,.5),transparent);display:none}
+@media(min-width:960px){.trail{display:block}}
+
+/* mini bottle that flies through section 2 */
+.mini-bottle{position:absolute;left:50%;width:44px;height:104px;transform:translateX(-50%);pointer-events:none;filter:drop-shadow(0 14px 24px rgba(0,0,0,.6));display:none;will-change:top,transform}
+@media(min-width:960px){.mini-bottle{display:block}}
+.mini-bottle .mg{position:absolute;inset:14px 4px 0;border-radius:5px;background:linear-gradient(160deg,#3d2517,#150b06);overflow:hidden}
+.mini-bottle .ml{position:absolute;left:0;right:0;bottom:0;height:72%;background:linear-gradient(180deg,#c9823a,#5a2c10)}
+.mini-bottle .mc{position:absolute;top:0;left:50%;transform:translateX(-50%);width:16px;height:16px;border-radius:2px;background:#221710}
+.mini-bottle::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);width:2px;height:60px;background:linear-gradient(180deg,rgba(212,180,124,.7),transparent)}
+
+/* ═══════════════ SECTION 3 — THE RITUAL ═══════════════ */
+.s3{background:linear-gradient(180deg,#D8CEC0 0%,#F5EFE5 30%,#EFE6D8 100%);color:#2A1A12;padding:130px 0;position:relative}
+.s3 .eyebrow{color:var(--clay)}
+.s3 h2{font-size:clamp(34px,4.6vw,54px);line-height:1.08;margin-top:20px;color:#221108}
+.s3 .sub{margin-top:20px;max-width:520px;font-size:15px;line-height:1.8;color:rgba(42,26,18,.75)}
+.drop-stage{position:relative;height:120px;margin:44px 0 8px;display:flex;justify-content:center}
+.drop{width:16px;height:22px;background:radial-gradient(circle at 35% 30%,#e6a95c,#B8712C 65%,#8a4d18);border-radius:50% 50% 55% 55%/60% 60% 45% 45%;animation:dropfall 3.2s var(--ease) infinite;box-shadow:0 6px 14px rgba(154,106,79,.5)}
+@keyframes dropfall{0%{transform:translateY(-60px) scale(.6);opacity:0}25%{opacity:1}55%{transform:translateY(58px) scale(1)}62%{transform:translateY(64px) scaleX(1.7) scaleY(.5);opacity:1}80%,100%{transform:translateY(64px) scaleX(2.6) scaleY(.12);opacity:0}}
+.gold-line{height:2px;max-width:760px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--amber) 20%,var(--gold) 80%,transparent);transform:scaleX(0);transform-origin:left;transition:transform 1.4s var(--ease)}
+.gold-line.in{transform:scaleX(1)}
+.steps{display:grid;gap:24px;margin-top:56px}
+@media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{background:rgba(255,255,255,.55);border:1px solid rgba(154,106,79,.25);border-radius:4px;padding:34px 28px;box-shadow:0 18px 40px -24px rgba(90,60,40,.35)}
+.step .num{font-family:"Cormorant Garamond",serif;font-size:15px;letter-spacing:.3em;color:var(--clay)}
+.step h3{font-family:"Cormorant Garamond",serif;font-size:27px;margin-top:12px;color:#221108}
+.step p{margin-top:12px;font-size:14px;line-height:1.75;color:rgba(42,26,18,.75)}
+.ing-row{display:grid;gap:14px;margin-top:56px}
+@media(min-width:860px){.ing-row{grid-template-columns:repeat(4,1fr)}}
+.ing{border:1px solid rgba(154,106,79,.3);border-radius:4px;padding:20px;background:rgba(255,255,255,.35)}
+.ing h4{font-family:"Cormorant Garamond",serif;font-size:18px;color:#221108}
+.ing p{margin-top:8px;font-size:12.5px;line-height:1.65;color:rgba(42,26,18,.7)}
+.safety{margin-top:48px;border-left:2px solid var(--amber);padding-left:22px;max-width:720px;font-size:13px;line-height:1.8;color:rgba(42,26,18,.8)}
+
+/* ═══════════════ SECTION 4 — OFFER ═══════════════ */
+.s4{background:radial-gradient(900px 500px at 50% 0%,rgba(42,15,15,.55),transparent 65%),linear-gradient(180deg,#0B0908,#120B09 60%,#0B0908);padding:130px 0 90px}
+.s4 h2{font-size:clamp(34px,4.6vw,54px);text-align:center}
+.s4 .sub{text-align:center;margin:18px auto 0;max-width:480px;font-size:15px;line-height:1.75;color:rgba(245,239,229,.7)}
+.offer-grid{display:grid;gap:22px;margin-top:64px}
+@media(min-width:920px){.offer-grid{grid-template-columns:repeat(3,1fr)}}
+.offer{position:relative;background:linear-gradient(170deg,rgba(32,20,14,.85),rgba(14,10,8,.95));border:1px solid rgba(184,148,92,.3);border-radius:5px;padding:34px 28px 30px;display:flex;flex-direction:column;transition:transform .4s var(--ease),box-shadow .4s var(--ease),border-color .4s}
+.offer:hover{transform:translateY(-6px);border-color:rgba(212,180,124,.65);box-shadow:0 30px 60px -24px rgba(0,0,0,.8)}
+.offer .lid{position:absolute;top:0;left:0;right:0;height:8px;background:linear-gradient(90deg,var(--gold),var(--gold-bright),var(--gold));border-radius:5px 5px 0 0;transform-origin:top;transition:transform .45s var(--ease)}
+.offer:hover .lid{transform:scaleY(2.4)}
+.offer .best{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-bright)}
+.offer h3{font-family:"Cormorant Garamond",serif;font-size:28px;margin-top:12px}
+.offer .price{font-family:"Cormorant Garamond",serif;font-size:36px;color:var(--gold-bright);margin-top:8px}
+.offer ul{list-style:none;margin-top:18px;flex:1}
+.offer li{font-size:13px;line-height:1.5;color:rgba(245,239,229,.72);padding:7px 0;border-bottom:1px solid rgba(184,148,92,.12)}
+.offer .btn{width:100%;margin-top:24px}
+.offer.center{border-color:rgba(212,180,124,.55)}
+.trust-grid{display:grid;gap:12px;margin-top:70px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:860px){.trust-grid{grid-template-columns:repeat(3,1fr)}}
+.tcard{border:1px solid rgba(184,148,92,.2);border-radius:3px;padding:18px;font-size:12.5px;letter-spacing:.04em;color:rgba(245,239,229,.72);text-align:center}
+.reviews-note{margin:60px auto 0;max-width:560px;text-align:center;border:1px dashed rgba(184,148,92,.35);border-radius:4px;padding:30px}
+.reviews-note p{font-size:14px;line-height:1.75;color:rgba(245,239,229,.65)}
+.final-cta{text-align:center;margin-top:70px}
+
+/* ── footer ── */
+footer{border-top:1px solid rgba(184,148,92,.18);padding:56px 0 40px;background:#0B0908}
+.f-grid{display:flex;flex-direction:column;gap:36px}
+@media(min-width:860px){.f-grid{flex-direction:row;justify-content:space-between}}
+.f-links{display:grid;grid-template-columns:repeat(2,auto);gap:12px 44px}
+@media(min-width:640px){.f-links{grid-template-columns:repeat(3,auto)}}
+.f-links button{background:none;border:none;text-align:left;font-size:12.5px;color:rgba(245,239,229,.6);transition:color .2s;padding:0}
+.f-links button:hover{color:var(--gold-bright)}
+.f-disclaimer{margin-top:44px;max-width:760px;font-size:11.5px;line-height:1.75;color:rgba(245,239,229,.45)}
+
+/* ── sticky CTA ── */
+.sticky-cta{position:fixed;bottom:22px;right:22px;z-index:60;opacity:0;pointer-events:none;transform:translateY(14px);transition:all .4s var(--ease)}
+.sticky-cta.show{opacity:1;pointer-events:auto;transform:none}
+
+/* ── cart drawer ── */
+.scrim{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.66);opacity:0;pointer-events:none;transition:opacity .35s}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:81;width:100%;max-width:440px;background:#120D0A;border-left:1px solid rgba(184,148,92,.28);transform:translateX(102%);transition:transform .42s var(--ease);display:flex;flex-direction:column}
+body.cart-open{overflow:hidden}
+body.cart-open .scrim{opacity:1;pointer-events:auto}
+body.cart-open .drawer{transform:none}
+.d-head{display:flex;justify-content:space-between;align-items:center;padding:24px 26px;border-bottom:1px solid rgba(184,148,92,.18)}
+.d-head h2{font-family:"Cormorant Garamond",serif;font-size:22px}
+.d-close{background:none;border:none;color:rgba(245,239,229,.6);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+.d-close:hover{color:var(--gold-bright)}
+.d-body{flex:1;overflow-y:auto;padding:24px 26px}
+.d-empty{font-size:14px;line-height:1.7;color:rgba(245,239,229,.55)}
+.d-line{border:1px solid rgba(184,148,92,.22);border-radius:4px;padding:16px;margin-bottom:14px;animation:linein .35s var(--ease)}
+@keyframes linein{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+.d-line .top{display:flex;justify-content:space-between;gap:12px}
+.d-line .nm{font-size:14px}
+.d-line .sb{display:block;margin-top:3px;font-size:11px;color:var(--gold)}
+.d-line .pr{font-family:"Cormorant Garamond",serif;font-size:17px;color:var(--gold-bright);white-space:nowrap}
+.d-line .row2{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.qty{display:flex;align-items:center;border:1px solid rgba(184,148,92,.3);border-radius:2px}
+.qty button{background:none;border:none;color:rgba(245,239,229,.7);padding:5px 13px;font-size:15px}
+.qty button:hover{color:var(--gold-bright)}
+.qty span{min-width:26px;text-align:center;font-size:13px}
+.rm{background:none;border:none;font-size:11px;color:rgba(245,239,229,.5);text-decoration:underline;text-underline-offset:2px}
+.rm:hover{color:var(--ivory)}
+.d-foot{border-top:1px solid rgba(184,148,92,.18);padding:22px 26px 26px}
+.d-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.d-total .t{font-size:13px;color:rgba(245,239,229,.6)}
+.d-total .v{font-family:"Cormorant Garamond",serif;font-size:26px;color:var(--gold-bright)}
+.d-save{font-size:11.5px;color:var(--gold);margin-bottom:14px}
+.d-foot .btn{width:100%}
+.d-fine{margin-top:12px;text-align:center;font-size:11px;color:rgba(245,239,229,.4)}
+
+/* ── modals (legal / faq / contact) ── */
+.modal-scrim{position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.72);display:none;align-items:flex-start;justify-content:center;padding:5vh 18px;overflow-y:auto}
+.modal-scrim.open{display:flex}
+.modal{background:#141009;border:1px solid rgba(184,148,92,.3);border-radius:6px;max-width:720px;width:100%;padding:40px 38px 44px;animation:linein .35s var(--ease)}
+.modal h2{font-family:"Cormorant Garamond",serif;font-size:30px;color:var(--ivory)}
+.modal .m-close{float:right;background:none;border:none;color:rgba(245,239,229,.6);font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin:-4px -4px 0 16px}
+.modal .m-close:hover{color:var(--gold-bright)}
+.modal h3{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--gold-bright);margin-top:26px}
+.modal p,.modal li{font-size:13.5px;line-height:1.8;color:rgba(245,239,229,.75);margin-top:10px}
+.modal ul{padding-left:18px}
+/* faq accordion */
+.faq-item{border-bottom:1px solid rgba(184,148,92,.18)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:18px 4px;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:14.5px;color:var(--ivory)}
+.faq-q .chev{color:var(--gold);transition:transform .3s var(--ease);flex-shrink:0}
+.faq-item.open .chev{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-a p{padding:0 4px 18px;margin:0}
+/* contact form */
+.cform label{display:block;margin-top:18px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,239,229,.6)}
+.cform input,.cform textarea,.cform select{width:100%;margin-top:8px;background:rgba(245,239,229,.05);border:1px solid rgba(184,148,92,.3);border-radius:2px;padding:12px 14px;font-family:inherit;font-size:14px;color:var(--ivory)}
+.cform input:focus,.cform textarea:focus,.cform select:focus{outline:none;border-color:var(--gold-bright)}
+.cform .err{font-size:12px;color:#e0a080;margin-top:6px;display:none}
+.cform .btn{margin-top:24px}
+.cform .sent{display:none;margin-top:20px;font-size:14px;color:var(--gold-bright)}
+
+/* toast */
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,12px);z-index:95;background:#1c130d;border:1px solid rgba(184,148,92,.4);border-radius:3px;padding:13px 22px;font-size:13px;color:var(--ivory);opacity:0;transition:all .35s var(--ease);pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* reveals */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+:focus-visible{outline:2px solid var(--gold-bright);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .rv{opacity:1;transform:none}
+  .hero h1 .w{opacity:1;transform:none;filter:none}
+  .hero .sub,.hero .ctas,.trust-micro,.buycard,.bottle-wrap{opacity:1}
+  .gold-line{transform:scaleX(1)}
+  .mini-bottle{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="announce">First reserve batch — small-batch ritual release</div>
+<header>
+  <div class="wrap hrow">
+    <a class="logo" href="#top">OROVEDA<span>&nbsp;RESERVE</span></a>
+    <nav class="hnav" aria-label="Primary">
+      <a href="#between" class="hidesm">The Wait</a>
+      <a href="#ritual" class="hidesm">The Ritual</a>
+      <a href="#offer" class="hidesm">Shop</a>
+      <button data-modal="faq">FAQ</button>
+      <button id="cart-open" aria-label="Open cart">Cart <span id="cart-count"></span></button>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══ SECTION 1 · HERO ═══ -->
+<section class="hero" id="top">
+  <div class="particles" id="particles" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow" style="opacity:0;animation:fadeup .8s var(--ease) .3s forwards">Botanical Oral Ritual Oil · 60 ml</p>
+      <h1 class="serif" id="hero-h" aria-label="Before the appointment, there is the ritual."></h1>
+      <p class="sub">A premium botanical oral oil inspired by traditional Ayurvedic mouth care — created for a cleaner, calmer, more intentional daily ritual.</p>
+      <div class="ctas">
+        <button class="btn btn-gold" onclick="addToCart('single')">Begin the Ritual</button>
+        <a class="btn btn-ghost" href="#ritual">See How It Works</a>
+      </div>
+      <p class="trust-micro">Not a drug. Not a substitute for dental care. A premium daily oral-care ritual.</p>
+
+      <div class="buycard" role="group" aria-label="Purchase Oroveda Reserve">
+        <div class="prow"><span class="pname serif">Oroveda Reserve — 60 ml</span><span class="pprice" id="buy-price">$149</span></div>
+        <div class="skus" role="radiogroup" aria-label="Choose option">
+          <button class="sku on" data-sku="single" aria-pressed="true">Single<br>$149</button>
+          <button class="sku" data-sku="duo" aria-pressed="false">Duo<br>$249</button>
+          <button class="sku" data-sku="kit" aria-pressed="false">Ritual Kit<br>$299</button>
+        </div>
+        <div class="subtoggle">
+          <button class="switch" id="sub-toggle" role="switch" aria-checked="false" aria-label="Subscription refill"></button>
+          <span>Refill every 45 days — <strong style="color:var(--gold-bright)">save $30</strong> <span style="opacity:.6">($119 per refill)</span></span>
+        </div>
+        <button class="btn btn-gold" id="buy-btn" onclick="addSelected()">Add to Cart</button>
+        <p class="fine">Free US shipping · 30-day unopened returns</p>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="bottle-wrap" id="bottle-wrap">
+        <div class="bottle" id="bottle">
+          <div class="cap"></div><div class="neck"></div>
+          <div class="glass">
+            <div class="liquid"></div>
+            <div class="refraction"></div><div class="refraction2"></div>
+            <div class="glow-sweep"></div>
+            <div class="blabel">
+              <span class="l1">OROVEDA</span>
+              <span class="l2">RESERVE</span>
+              <span class="rule"></span>
+              <span class="l3">Botanical Oral Ritual Oil</span>
+              <span class="l4">60 ml · Small-batch</span>
+            </div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION 2 · BETWEEN APPOINTMENTS ═══ -->
+<section class="s2" id="between">
+  <div class="trail" aria-hidden="true"></div>
+  <div class="mini-bottle" id="mini-bottle" aria-hidden="true"><div class="mc"></div><div class="mg"><div class="ml"></div></div></div>
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow rv">Between appointments</p>
+      <h2 class="serif rv">Dental discomfort does not wait for your calendar.</h2>
+      <p class="sub rv">When your appointment is days away, your routine still matters. Oroveda Reserve gives you a refined oral-care ritual for the moments between brushing, flossing, and professional care.</p>
+      <div class="calcards">
+        <div class="cal rv"><span class="dot"></span>“Next appointment available Friday.”</div>
+        <div class="cal rv"><span class="dot"></span>“Dental bill anxiety.”</div>
+        <div class="cal rv"><span class="dot"></span>“Late-night discomfort.”</div>
+        <div class="cal rv"><span class="dot"></span>“What can I do now?”</div>
+      </div>
+    </div>
+    <div class="probcards">
+      <div class="prob rv"><h3>The wait</h3><p>Appointments are not always immediate. Your routine can still feel intentional — a nightly ritual for a cared-for mouth while you wait for professional care.</p></div>
+      <div class="prob rv"><h3>The cost anxiety</h3><p>A refined ritual for daily care — without pretending to replace diagnosis. Honest positioning is part of the luxury.</p></div>
+      <div class="prob rv"><h3>The night routine</h3><p>A botanical oil massage or swish that turns oral care into a calmer end-of-day ritual, with a fresh, botanical mouthfeel.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SECTION 3 · THE RITUAL ═══ -->
+<section class="s3" id="ritual">
+  <div class="wrap">
+    <p class="eyebrow rv">How to use</p>
+    <h2 class="serif rv">The 90-second ritual.</h2>
+    <p class="sub rv">A small nightly act of oral care — rooted in tradition, refined for modern routines.</p>
+    <div class="drop-stage" aria-hidden="true"><div class="drop"></div></div>
+    <div class="gold-line" id="gold-line" aria-hidden="true"></div>
+    <div class="steps">
+      <div class="step rv"><span class="num">STEP 01</span><h3 class="serif">Dispense</h3><p>Place 3–5 drops onto a clean fingertip or cotton applicator.</p></div>
+      <div class="step rv"><span class="num">STEP 02</span><h3 class="serif">Massage or Swish</h3><p>Massage gently along the gumline, or swish a small amount as part of your oral-care ritual.</p></div>
+      <div class="step rv"><span class="num">STEP 03</span><h3 class="serif">Spit &amp; Continue</h3><p>Spit out. Do not swallow. Continue brushing, flossing, and visiting your dentist as advised.</p></div>
+    </div>
+    <div class="ing-row">
+      <div class="ing rv"><h4 class="serif">Sesame oil base</h4><p>The traditional carrier of Ayurvedic oral rituals — warm, silky, grounding.</p></div>
+      <div class="ing rv"><h4 class="serif">Clove-inspired warmth</h4><p>The unmistakable note of traditional mouth care. Contains natural eugenol.</p></div>
+      <div class="ing rv"><h4 class="serif">Ayurvedic botanical blend</h4><p>A traditional composition drawn from the classical Irimedadi preparation.</p></div>
+      <div class="ing rv"><h4 class="serif">Crafted consistency</h4><p>Made for sensory depth and ritual consistency, batch after batch.</p></div>
+    </div>
+    <p class="safety rv"><strong>Safety:</strong> Do not use on open wounds. Avoid if allergic to sesame, clove, or any listed ingredient. For persistent pain, swelling, bleeding, fever, trauma, or tooth sensitivity, consult a dentist promptly.</p>
+  </div>
+</section>
+
+<!-- ═══ SECTION 4 · OFFER ═══ -->
+<section class="s4" id="offer">
+  <div class="wrap">
+    <h2 class="serif rv">Choose your ritual.</h2>
+    <p class="sub rv">Every option ships in the first reserve batch. Refill subscription available on all of them.</p>
+    <div class="offer-grid">
+      <div class="offer rv"><div class="lid"></div>
+        <span class="best">First ritual</span>
+        <h3 class="serif">Single Reserve</h3>
+        <p class="price">$149</p>
+        <ul><li>60 ml Oroveda Reserve bottle</li><li>Ritual instruction card</li><li>Free US shipping</li></ul>
+        <button class="btn btn-ghost" onclick="addToCart('single')">Add Single</button>
+      </div>
+      <div class="offer center rv"><div class="lid"></div>
+        <span class="best">Most chosen</span>
+        <h3 class="serif">Reserve Duo</h3>
+        <p class="price">$249</p>
+        <ul><li>2 × 60 ml Oroveda Reserve bottles</li><li>Ritual instruction card</li><li>One for the shelf, one for travel</li><li>Free US shipping</li></ul>
+        <button class="btn btn-gold" onclick="addToCart('duo')">Add Duo</button>
+      </div>
+      <div class="offer rv"><div class="lid"></div>
+        <span class="best">Full experience</span>
+        <h3 class="serif">Complete Ritual Kit</h3>
+        <p class="price">$299</p>
+        <ul><li>60 ml Oroveda Reserve bottle</li><li>Brushed metal tongue scraper</li><li>Ceramic ritual dish</li><li>Cotton applicators</li><li>Ritual instruction card</li><li>Heavyweight black-gold magnetic box</li></ul>
+        <button class="btn btn-ghost" onclick="addToCart('kit')">Add Ritual Kit</button>
+      </div>
+    </div>
+
+    <div class="reviews-note rv">
+      <p class="eyebrow" style="margin-bottom:12px">Reviews</p>
+      <p>Verified reviews will appear here after launch. Early ritual tester feedback is published only with written permission — nothing here will ever be fabricated.</p>
+    </div>
+
+    <div class="trust-grid">
+      <div class="tcard rv">Transparent ingredient listing</div>
+      <div class="tcard rv">Evidence-aware copy</div>
+      <div class="tcard rv">Designed for daily ritual</div>
+      <div class="tcard rv">Not a substitute for professional dental care</div>
+      <div class="tcard rv">Secure checkout</div>
+      <div class="tcard rv">30-day unopened return policy</div>
+    </div>
+
+    <div class="final-cta rv">
+      <button class="btn btn-gold" onclick="addToCart('single')">Begin the Ritual</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="logo">OROVEDA<span>&nbsp;RESERVE</span></p>
+        <p style="margin-top:12px;max-width:300px;font-size:12.5px;line-height:1.7;color:rgba(245,239,229,.55)">Botanical oral ritual oil inspired by the classical Irimedadi preparation.</p>
+      </div>
+      <nav class="f-links" aria-label="Legal and information">
+        <button data-modal="privacy">Privacy Policy</button>
+        <button data-modal="terms">Terms of Service</button>
+        <button data-modal="returns">Returns</button>
+        <button data-modal="shipping">Shipping</button>
+        <button data-modal="medical">Medical Disclaimer</button>
+        <button data-modal="contact">Contact</button>
+        <button data-modal="accessibility">Accessibility</button>
+        <button data-modal="ingredients">Ingredient Safety</button>
+        <button data-modal="evidence">Evidence &amp; Tradition</button>
+      </nav>
+    </div>
+    <p class="f-disclaimer">Oroveda Reserve is a cosmetic/wellness oral-care product and is not intended to diagnose, treat, cure, prevent, or mitigate any disease or medical condition. It is not a substitute for brushing, flossing, dental diagnosis, or professional treatment. If you experience tooth pain, swelling, bleeding, fever, trauma, sensitivity, or symptoms that persist, consult a licensed dentist or healthcare professional.</p>
+    <p style="margin-top:18px;font-size:11px;color:rgba(245,239,229,.35)">© 2026 Oroveda Reserve. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky-cta"><button class="btn btn-gold" onclick="addToCart('single')">Begin the Ritual — $149</button></div>
+
+<!-- cart -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="d-head"><h2>Your ritual</h2><button class="d-close" id="cart-close">Close</button></div>
+  <div class="d-body" id="cart-body"></div>
+  <div class="d-foot">
+    <div class="d-total"><span class="t">Subtotal</span><span class="v" id="cart-total">$0</span></div>
+    <p class="d-save" id="cart-save" style="display:none">Subscription savings applied — $30 off each refill cycle.</p>
+    <button class="btn btn-gold" id="checkout-btn">Continue to Checkout</button>
+    <p class="d-fine">Checkout connects to Stripe at launch. This preview does not charge cards.</p>
+  </div>
+</aside>
+
+<!-- modals -->
+<div class="modal-scrim" id="modal-scrim">
+  <div class="modal" role="dialog" aria-modal="true" id="modal-box">
+    <button class="m-close" id="modal-close">Close</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+/* ═══ PRODUCTS ═══ */
+var PRODUCTS = {
+  single: { name: "Single Reserve", desc: "60 ml bottle", price: 149 },
+  duo:    { name: "Reserve Duo", desc: "2 × 60 ml bottles", price: 249 },
+  kit:    { name: "Complete Ritual Kit", desc: "Bottle, scraper, dish, applicators, box", price: 299 },
+  refill: { name: "Subscription Refill", desc: "60 ml every 45 days", price: 119 }
+};
+
+/* ═══ WORD-BY-WORD HERO HEADLINE ═══ */
+(function () {
+  var words = "Before the appointment, there is the ritual.".split(" ");
+  var h = document.getElementById("hero-h");
+  h.innerHTML = words.map(function (w, i) {
+    return '<span class="w" style="animation-delay:' + (0.35 + i * 0.13) + 's">' + w + "</span>";
+  }).join(" ");
+})();
+
+/* ═══ PARTICLES ═══ */
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return;
+  var box = document.getElementById("particles");
+  for (var i = 0; i < 26; i++) {
+    var p = document.createElement("span");
+    p.className = "p";
+    var size = 2 + Math.random() * 5;
+    p.style.width = size + "px";
+    p.style.height = size + "px";
+    p.style.left = Math.random() * 100 + "%";
+    p.style.top = 60 + Math.random() * 50 + "%";
+    p.style.animationDuration = 9 + Math.random() * 14 + "s";
+    p.style.animationDelay = -Math.random() * 18 + "s";
+    box.appendChild(p);
+  }
+})();
+
+/* ═══ SCROLL: hero bottle drifts + mini bottle flies through S2 ═══ */
+(function () {
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return;
+  var wrapEl = document.getElementById("bottle-wrap");
+  var mini = document.getElementById("mini-bottle");
+  var s2 = document.getElementById("between");
+  var ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY;
+      var vh = window.innerHeight;
+      /* hero bottle: gentle fly down-right and fade as you leave section 1 */
+      var p1 = Math.min(1, y / (vh * 0.9));
+      wrapEl.style.transform = "translate(" + p1 * 60 + "px," + p1 * 130 + "px) scale(" + (1 - p1 * 0.18) + ")";
+      wrapEl.style.opacity = String(1 - p1 * 0.85);
+      /* mini bottle travels down the section-2 trail with a golden wake */
+      var r = s2.getBoundingClientRect();
+      var total = r.height + vh;
+      var p2 = Math.min(1, Math.max(0, (vh - r.top) / total));
+      mini.style.top = 6 + p2 * 82 + "%";
+      mini.style.transform = "translateX(-50%) rotate(" + (p2 * 14 - 7) + "deg)";
+      ticking = false;
+    });
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+})();
+
+/* ═══ REVEALS + gold line ═══ */
+(function () {
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+    });
+  }, { threshold: 0.18 });
+  document.querySelectorAll(".rv").forEach(function (el) { io.observe(el); });
+  var line = document.getElementById("gold-line");
+  var io2 = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) { if (en.isIntersecting) { line.classList.add("in"); io2.disconnect(); } });
+  }, { threshold: 0.4 });
+  io2.observe(line);
+})();
+
+/* ═══ STICKY CTA after section 2 ═══ */
+(function () {
+  var cta = document.getElementById("sticky-cta");
+  var s2 = document.getElementById("between");
+  var offer = document.getElementById("offer");
+  window.addEventListener("scroll", function () {
+    var past = s2.getBoundingClientRect().bottom < 0;
+    var atOffer = offer.getBoundingClientRect().top < window.innerHeight * 0.6;
+    cta.classList.toggle("show", past && !atOffer && !document.body.classList.contains("cart-open"));
+  }, { passive: true });
+})();
+
+/* ═══ HERO PURCHASE CARD ═══ */
+var selectedSku = "single";
+var subscription = false;
+document.querySelectorAll(".sku").forEach(function (b) {
+  b.addEventListener("click", function () {
+    document.querySelectorAll(".sku").forEach(function (x) { x.classList.remove("on"); x.setAttribute("aria-pressed", "false"); });
+    b.classList.add("on");
+    b.setAttribute("aria-pressed", "true");
+    selectedSku = b.dataset.sku;
+    document.getElementById("buy-price").textContent = "$" + PRODUCTS[selectedSku].price;
+  });
+});
+document.getElementById("sub-toggle").addEventListener("click", function () {
+  subscription = !subscription;
+  this.classList.toggle("on", subscription);
+  this.setAttribute("aria-checked", String(subscription));
+});
+function addSelected() {
+  addToCart(selectedSku);
+  if (subscription) addToCart("refill", true);
+}
+
+/* ═══ CART ═══ */
+var cart = {}; /* key -> {qty, sub} */
+function addToCart(sku, quiet) {
+  cart[sku] = cart[sku] || { qty: 0 };
+  cart[sku].qty += 1;
+  renderCart();
+  openCart();
+  if (!quiet) toast(PRODUCTS[sku].name + " added to your ritual.");
+  track("add_to_cart", sku);
+}
+function setQty(sku, q) {
+  if (q <= 0) delete cart[sku]; else cart[sku].qty = q;
+  renderCart();
+}
+function renderCart() {
+  var body = document.getElementById("cart-body");
+  var keys = Object.keys(cart);
+  var count = keys.reduce(function (n, k) { return n + cart[k].qty; }, 0);
+  document.getElementById("cart-count").textContent = count ? "(" + count + ")" : "";
+  var total = keys.reduce(function (n, k) { return n + cart[k].qty * PRODUCTS[k].price; }, 0);
+  document.getElementById("cart-total").textContent = "$" + total;
+  document.getElementById("cart-save").style.display = cart.refill ? "block" : "none";
+  document.getElementById("checkout-btn").disabled = count === 0;
+  if (count === 0) {
+    body.innerHTML = '<p class="d-empty">Your ritual is empty. Begin with the Single Reserve, or choose the kit for the full experience.</p>';
+    return;
+  }
+  body.innerHTML = keys.map(function (k) {
+    var p = PRODUCTS[k];
+    return '<div class="d-line">' +
+      '<div class="top"><div><span class="nm">' + p.name + '</span><span class="sb">' + p.desc + (k === "refill" ? " · every 45 days" : "") + '</span></div>' +
+      '<span class="pr">$' + p.price * cart[k].qty + '</span></div>' +
+      '<div class="row2"><div class="qty">' +
+      '<button aria-label="Decrease quantity of ' + p.name + '" onclick="setQty(\'' + k + "'," + (cart[k].qty - 1) + ')">−</button>' +
+      "<span>" + cart[k].qty + "</span>" +
+      '<button aria-label="Increase quantity of ' + p.name + '" onclick="setQty(\'' + k + "'," + (cart[k].qty + 1) + ')">+</button>' +
+      '</div><button class="rm" onclick="setQty(\'' + k + "',0)\">Remove</button></div></div>";
+  }).join("");
+}
+function openCart() { document.body.classList.add("cart-open"); }
+function closeCart() { document.body.classList.remove("cart-open"); }
+document.getElementById("cart-open").addEventListener("click", function () { openCart(); renderCart(); });
+document.getElementById("cart-close").addEventListener("click", closeCart);
+document.getElementById("scrim").addEventListener("click", closeCart);
+document.getElementById("checkout-btn").addEventListener("click", function () {
+  track("checkout_started");
+  toast("Checkout opens at launch — Stripe wiring is ready in the codebase.");
+});
+renderCart();
+
+/* ═══ MODALS ═══ */
+var MODALS = {
+  medical: '<h2 class="serif">Medical Disclaimer</h2><p>Oroveda Reserve is a cosmetic/wellness oral-care product and is not intended to diagnose, treat, cure, prevent, or mitigate any disease or medical condition. It is not a substitute for brushing, flossing, dental diagnosis, or professional treatment. If you experience tooth pain, swelling, bleeding, fever, trauma, sensitivity, or symptoms that persist, consult a licensed dentist or healthcare professional.</p><h3 class="serif">About the research we reference</h3><p>Some small studies have explored Irimedadi / Arimedadi oil as an adjunct in oral-care contexts. That evidence is limited in size and duration, and we present it carefully — see Evidence &amp; Tradition. No statement on this site has been evaluated by the Food and Drug Administration.</p>',
+  privacy: '<h2 class="serif">Privacy Policy</h2><h3 class="serif">What we collect</h3><p>Email address and order details when you purchase; analytics cookies to understand how the site is used; payment details are handled entirely by our payment processor and never touch our servers.</p><h3 class="serif">How we use it</h3><p>To fulfil orders, provide support, and — only with your consent — send occasional emails. We do not sell personal data.</p><h3 class="serif">Your rights</h3><p>Request a copy or deletion of your data at any time via the contact form. Every marketing email includes one-click unsubscribe.</p><p>Contact: privacy@orovedareserve.com (placeholder until launch).</p>',
+  terms: '<h2 class="serif">Terms of Service</h2><h3 class="serif">Use of the product</h3><p>Oroveda Reserve is for external oral-care use by adults, as directed. Do not swallow. Nothing on this site is medical advice.</p><h3 class="serif">Payment &amp; orders</h3><p>Prices are in US dollars. Subscriptions renew every 45 days and can be paused or cancelled any time before renewal.</p><h3 class="serif">Liability</h3><p>To the extent permitted by law, our liability is limited to the purchase price. You are responsible for reviewing the ingredient list for allergens before use.</p>',
+  returns: '<h2 class="serif">Returns Policy</h2><p><strong>30-day unopened returns.</strong> Unopened products may be returned within 30 days of delivery for a full refund.</p><p>For hygiene reasons, opened oral-care products cannot be returned unless defective. If your product arrives damaged or defective, contact us within 7 days with photos and we will replace it at no cost.</p><p>Damaged shipments: photograph the box and contents before opening further, and send both via the contact form.</p>',
+  shipping: '<h2 class="serif">Shipping Policy</h2><p>US shipping only during the first reserve batch. Orders are processed within 1–2 business days; standard delivery takes 3–5 business days.</p><p>Every order receives a tracking link by email. If tracking stalls for more than 5 days or a package is marked delivered but missing, contact us and we will investigate with the carrier and re-ship or refund.</p>',
+  accessibility: '<h2 class="serif">Accessibility Statement</h2><p>This site targets WCAG 2.2 AA: keyboard-navigable cart and menus, visible focus states, semantic landmarks, sufficient colour contrast, and full reduced-motion support — every animation collapses to a static layout when your system requests reduced motion.</p><p>If anything on this site is not accessible to you, that is a defect. Report it via the contact form and we will prioritise a fix.</p>',
+  ingredients: '<h2 class="serif">Ingredient Safety</h2><p>Oroveda Reserve is prepared on a base of <strong>sesame oil</strong> and contains <strong>clove</strong> (natural eugenol) and a traditional Ayurvedic botanical blend drawn from the classical Irimedadi preparation.</p><h3 class="serif">Do not use if</h3><ul><li>You are allergic to sesame, clove, or any listed ingredient.</li><li>You have open wounds in the mouth.</li></ul><p>Patch-test before first use. Discontinue if irritation occurs. Keep out of reach of children. If you are pregnant or nursing, consult your doctor before use.</p>',
+  evidence: '<h2 class="serif">Evidence &amp; Tradition</h2><h3 class="serif">The tradition</h3><p>Oroveda Reserve is inspired by the classical Ayurvedic preparation known as Irimedadi (or Arimedadi) taila, used in traditional gum-massage and oil-holding rituals.</p><h3 class="serif">The research, honestly</h3><p>A small number of short clinical studies have explored this oil as an <em>adjunct</em> to normal oral hygiene — used alongside brushing and professional cleaning, never instead of them. The studies are small, short, and limited; mainstream dental bodies do not recommend oil practices as a hygiene method, and no reliable studies show oil rituals reduce cavities or whiten teeth.</p><h3 class="serif">What this means</h3><p>We present the research to inform, not to promise. Oroveda Reserve is a ritual and a cosmetic — not a therapy. Tooth pain or bleeding gums should be seen by a dentist promptly.</p>',
+  faq: '<h2 class="serif">Frequently Asked Questions</h2><div id="faq-list"></div>',
+  contact: '<h2 class="serif">Contact</h2><p>Questions, order help, or a product reaction to report — all of it comes through here.</p><form class="cform" id="contact-form" novalidate><label for="cf-name">Name</label><input id="cf-name" type="text" autocomplete="name" /><p class="err" id="err-name">Please enter your name.</p><label for="cf-email">Email</label><input id="cf-email" type="email" autocomplete="email" /><p class="err" id="err-email">Please enter a valid email address.</p><label for="cf-topic">Topic</label><select id="cf-topic"><option>Order help</option><option>Product question</option><option>Product reaction / adverse event</option><option>Press</option><option>Other</option></select><label for="cf-msg">Message</label><textarea id="cf-msg" rows="5"></textarea><p class="err" id="err-msg">Please write a message.</p><button type="submit" class="btn btn-gold">Send Message</button><p class="sent" id="cf-sent">Thank you — your message is saved locally in this preview. The live form connects at launch.</p></form>'
+};
+var FAQS = [
+  ["Can this cure toothache?", "No. Oroveda Reserve is not a drug and is not intended to cure or treat toothache. Tooth pain should be evaluated by a dentist. Oroveda is designed as a premium oral-care ritual between regular hygiene and professional care."],
+  ["Is this a replacement for brushing or flossing?", "No. Continue brushing twice daily, flossing, and following your dentist's guidance."],
+  ["Can I swallow it?", "No. Spit out after use."],
+  ["What does it feel like?", "Warm, botanical, grounding, and deeply ritualistic, with a clean-mouth finish."],
+  ["Is it Ayurvedic?", "It is inspired by traditional Ayurvedic oral-care practices and botanical oil rituals."],
+  ["Is it clinically proven?", "Some small studies have explored Irimedadi / Arimedadi oil as an adjunct in oral-care contexts, but evidence is limited. We present research carefully and do not claim disease treatment."]
+];
+function openModal(key) {
+  var scrim = document.getElementById("modal-scrim");
+  document.getElementById("modal-content").innerHTML = MODALS[key];
+  scrim.classList.add("open");
+  if (key === "faq") buildFaq();
+  if (key === "contact") wireContact();
+  if (key === "evidence") track("evidence_page_viewed");
+  document.getElementById("modal-box").scrollTop = 0;
+}
+function closeModal() { document.getElementById("modal-scrim").classList.remove("open"); }
+document.querySelectorAll("[data-modal]").forEach(function (b) {
+  b.addEventListener("click", function () { openModal(b.dataset.modal); });
+});
+document.getElementById("modal-close").addEventListener("click", closeModal);
+document.getElementById("modal-scrim").addEventListener("click", function (e) { if (e.target === this) closeModal(); });
+document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeModal(); closeCart(); } });
+
+function buildFaq() {
+  var list = document.getElementById("faq-list");
+  list.innerHTML = FAQS.map(function (f, i) {
+    return '<div class="faq-item" id="faq-' + i + '"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(' + i + ')">' + f[0] + '<span class="chev">+</span></button><div class="faq-a"><p>' + f[1] + "</p></div></div>";
+  }).join("");
+}
+function toggleFaq(i) {
+  var item = document.getElementById("faq-" + i);
+  var a = item.querySelector(".faq-a");
+  var q = item.querySelector(".faq-q");
+  var open = item.classList.toggle("open");
+  q.setAttribute("aria-expanded", String(open));
+  a.style.maxHeight = open ? a.scrollHeight + "px" : "0";
+  if (open) track("faq_opened");
+}
+function wireContact() {
+  var form = document.getElementById("contact-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var ok = true;
+    var name = document.getElementById("cf-name");
+    var email = document.getElementById("cf-email");
+    var msg = document.getElementById("cf-msg");
+    document.getElementById("err-name").style.display = name.value.trim() ? "none" : "block";
+    document.getElementById("err-email").style.display = /.+@.+\..+/.test(email.value) ? "none" : "block";
+    document.getElementById("err-msg").style.display = msg.value.trim() ? "none" : "block";
+    if (!name.value.trim() || !/.+@.+\..+/.test(email.value) || !msg.value.trim()) ok = false;
+    if (ok) {
+      document.getElementById("cf-sent").style.display = "block";
+      track("contact_submitted");
+    }
+  });
+}
+
+/* ═══ TOAST + ANALYTICS STUB (PostHog-ready event names) ═══ */
+var toastTimer;
+function toast(msg) {
+  var t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function () { t.classList.remove("show"); }, 2800);
+}
+function track(event, meta) {
+  /* Wire to PostHog at launch: posthog.capture(event, {sku: meta}) */
+  if (window.posthog && window.posthog.capture) window.posthog.capture(event, { sku: meta });
+}
+document.querySelectorAll(".btn-gold").forEach(function (b) {
+  b.addEventListener("click", function () { track("hero_cta_clicked"); }, { once: true });
+});
+</script>
+</body>
+</html>
